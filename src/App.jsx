@@ -1,28 +1,39 @@
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Destination from "./pages/Destination";
+import Crew from "./pages/Crew";
+import Technology from "./pages/Technology";
+
 const App = () => {
   return (
     <>
-      <header>
-        <nav>
-          <div>
-            <img src="" alt="logo" />
-          </div>
-          <div>00 Home 01 Destination 02 Crew 03 Technology</div>
-        </nav>
-      </header>
-      
-      <main>
-        <section>
-          <div>
-            So, you want to travel to Space Let’s face it; if you want to go to
-            space, you might as well genuinely go to outer space and not hover
-            kind of on the edge of it. Well sit back, and relax because we’ll
-            give you a truly out of this world experience!
-          </div>
-          <div>Explore</div>
-        </section>
-      </main>
+      <BrowserRouter>
+        <header>
+          <nav>
+            <div>
+              <img src="" alt="logo" />
+            </div>
+            <div>
+              <NavLink to="/"> 00 Home </NavLink>
+              <NavLink to="destination">01 Destination </NavLink>
+              <NavLink to="crew">02 Crew</NavLink>
+              <NavLink to="technology">03 Technology</NavLink>
+            </div>
+          </nav>
+        </header>
 
-      <footer></footer>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="destination" element={<Destination />} />
+            <Route path="crew" element={<Crew />} />
+            <Route path="technology" element={<Technology />} />
+          </Routes>
+
+         
+        </main>
+      </BrowserRouter>
     </>
   );
 };
