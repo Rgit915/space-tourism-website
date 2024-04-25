@@ -8,6 +8,7 @@ import Technology from "./pages/Technology";
 import logo from "./assets/shared/logo.svg";
 import menuIcon from "./assets/shared/icon-hamburger.svg";
 import closeIcon from "./assets/shared/icon-close.svg";
+import NavLinks from "./components/NavLinks";
 
 const App = () => {
   return (
@@ -28,12 +29,7 @@ const App = () => {
                   <img src={closeIcon} alt="close Icon" />
                 </button>
               </div>
-              <div className="hidden">
-                <NavLink to="/"> 00 Home </NavLink>
-                <NavLink to="destination">01 Destination </NavLink>
-                <NavLink to="crew">02 Crew</NavLink>
-                <NavLink to="technology">03 Technology</NavLink>
-              </div>
+              <NavLinks/>
             </div>
           </nav>
         </header>
