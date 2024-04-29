@@ -3,7 +3,7 @@ import moonImage from "../assets/destination/image-moon.png"
 
 const Destination = () => {
   return (
-    <section className="planet-container bg-[url('./assets/destination/background-destination-mobile.jpg')]  bg-no-repeat  flex flex-col items-center justify-center mt-8 space-y-4">
+    <section className="planet-container flex flex-col items-center justify-center mt-8 space-y-4">
       <p className="navlink font-barlow-condensed  tracking-[2.7px] uppercase "> <span className="opacity-20 font-bold mr-3"> 01 </span> Pick your destination</p>
       <img src={moonImage} className="w-[170px] h-[170px] "/>
 

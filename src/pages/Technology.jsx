@@ -2,7 +2,7 @@ import techTalk from "../assets/technology/image-launch-vehicle-landscape.jpg";
 
 const Technology = () => {
   return (
-    <section className="technology bg-[url('./assets/technology/background-technology-mobile.jpg')]  bg-no-repeat  flex flex-col items-center justify-center mt-8 space-y-4">
+    <section className="technology flex flex-col items-center justify-center mt-8 space-y-4">
       <p className="navlink font-barlow-condensed  tracking-[2.7px] uppercase ">
         <span className="opacity-20 font-bold mr-3"> 03 </span> space launch 101
       </p>
