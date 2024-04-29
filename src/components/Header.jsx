@@ -19,7 +19,7 @@ const Header = () => {
           <div>
             <img src={logo} alt="logo" />
           </div>
-          <div className="hidden md:flex">
+          <div className="hidden md:flex z-10">
             <NavLinks />
           </div>
           <div className="md:hidden">
@@ -37,7 +37,7 @@ const Header = () => {
           </div>
         </nav>
         {isOpen && (
-          <div className="menu backdrop-blur-2xl p-10  transition ease-in-out duration-300 absolute inset-y-0 right-0 w-64  md:flex md:bg-[#979797]">
+          <div className="menu">
             <NavLinks />
           </div>
         )}
