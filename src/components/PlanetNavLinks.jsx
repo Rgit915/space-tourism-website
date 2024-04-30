@@ -1,18 +1,28 @@
-import { NavLink } from "react-router-dom";
+import React from "react";
 
-const PlanetNavLinks = () => {
+const PlanetNavLinks = ({ planets, onPlanetClick }) => {
+  const handlePlanetClick = (index) => {
+    onPlanetClick(index); // Call the onPlanetClick function provided by the parent component
+  };
+
   return (
-    <div className="planet-nav-links text-[16px] tracking-[2.36px] flex space-x-6 font-barlow-condensed text-light-blue">
-      <NavLink to="/"> Moon </NavLink>
-      <NavLink to="mars">Mars </NavLink>
-      <NavLink to="europa">Europa</NavLink>
-      <NavLink to="titan">Titan</NavLink>
+    <div className="planet-nav-links text-[16px] tracking-[2.36px] font-barlow-condensed text-light-blue">
+      <ul className="flex space-x-6">
+        {/* Map through the planets array to render each planet link */}
+        {planets.map((planet, index) => (
+          <li key={index}>
+            <button
+              type="button"
+              className="hover:underline"
+              onClick={() => handlePlanetClick(index)}
+            >
+              {planet.name}
+            </button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
-
-
-
-
 
 export default PlanetNavLinks;
