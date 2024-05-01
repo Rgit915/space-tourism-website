@@ -29,13 +29,13 @@ const Destination = () => {
   return (
     <section className="planet-container flex flex-col items-center justify-center mt-8 space-y-4">
       {/* Render the planet data based on the selected planet */}
-      <p className="font-barlow-condensed  tracking-[2.7px] uppercase ">
-        <span className="opacity-20 font-bold mr-3"> 01 </span> Pick your
+      <p className="font-barlow-condensed  tracking-[2.7px] uppercase mt-6">
+        <span className="opacity-20 font-bold mr-3 md:text-[20px] md:tracking-[3.38px] "> 01 </span> Pick your
         destination
       </p>
       <img
         src={planetData.image}
-        className="w-[170px] h-[170px] "
+        className="w-[170px] h-[170px] md:w-[300px] md:h-[300px] "
         alt={planetData.name}
       />
 
