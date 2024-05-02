@@ -3,17 +3,17 @@ import React from "react";
 const DestinationListItem = ({ planetData }) => {
   return (
     <div>
-      <h2 className="planet-name text-[56px] font-bellefair uppercase md:text-[80px]">
+      <h2 className="planet-name text-[56px] font-bellefair uppercase md:text-[80px] lg:text-[100px] lg:text-left">
         {planetData.name}
       </h2>
 
-      <p className="description text-[15px] font-barlow text-light-blue leading-6 p-8 md:text-[16px] md:leading-7 md:p-12 md:mx-5">
+      <p className="description text-[15px] font-barlow text-light-blue leading-6 p-8 md:text-[16px] md:leading-7 md:p-12 md:mx-5 lg:text-[18px] lg:leading-8 lg:p-2 lg:mx-0 lg:text-left">
         {planetData.description}
       </p>
       <div className="flex justify-center items-center">
         <hr className="w-[327px] h-[1px] opacity-25 bg-[#383B4B] md:w-[573px]" />
       </div>
-      <div className="text-light-blue uppercase flex flex-col py-4 space-y-8 md:space-y-0 md:flex-row md:justify-around md:items-center ">
+      <div className="text-light-blue uppercase flex flex-col py-4 space-y-8 md:space-y-0 md:flex-row md:justify-around md:items-center lg:text-left lg:justify-start lg:space-x-12">
         <div>
           <p className="distance text-[14px] font-barlow-condensed tracking-[2.36px] ">
            Avg. Distance
