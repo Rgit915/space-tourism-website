@@ -1,10 +1,9 @@
 import PlanetNavLinks from "../components/PlanetNavLinks";
-import destinationData from "../data.json";
 import { useState } from "react";
 import DestinationListItem from "../components/DestinationListItem";
 
-const Destination = () => {
-  const planets = destinationData.destinations;
+const Destination = ({data}) => {
+  const planets = data.destinations;
 
   const [planetData, setPlanetData] = useState({
     name: planets[0].name,

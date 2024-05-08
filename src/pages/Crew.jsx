@@ -1,9 +1,8 @@
 import { useState } from "react";
-import crewData from "../data.json";
 import { RxDot, RxDotFilled } from "react-icons/rx";
 
-const Crew = () => {
-  const crew = crewData.crew;
+const Crew = ({data}) => {
+  const crew = data.crew;
 
   const [activeCrew, setActiveCrew] = useState({
     name: crew[0].name,

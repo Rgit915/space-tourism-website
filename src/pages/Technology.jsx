@@ -1,7 +1,6 @@
 import { useState } from "react";
-import data from "../data.json";
 
-const Technology = () => {
+const Technology = ({data}) => {
   const technology = data.technology;
 
   const [activeIndex, setActiveIndex] = useState(0); // State to track active index
