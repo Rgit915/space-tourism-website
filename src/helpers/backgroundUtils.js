@@ -5,24 +5,24 @@ const getBackgroundClass = (path, screenWidth) => {
   // Define mappings of routes to background classes for different screen sizes
    const mappings = {
     '/': {
-      mobile: 'bgHomeMobile',
-      tablet: 'bgHomeTablet',
-      desktop: 'bgHomeDesktop',
+      mobile: 'bg-home-mobile',
+      tablet: 'bg-home-tablet',
+      desktop: 'bg-home-desktop',
     },
     '/destination': {
-      mobile: 'bgDestinationMobile',
-      tablet: 'bgDestinationTablet',
-      desktop: 'bgDestinationDesktop',
+      mobile: 'bg-destination-mobile',
+      tablet: 'bg-destination-tablet',
+      desktop: 'bg-destination-desktop',
     },
     '/crew': {
-      mobile: 'bgCrewMobile',
-      tablet: 'bgCrewTablet',
-      desktop: 'bgCrewDesktop',
+      mobile: 'bg-crew-mobile',
+      tablet: 'bg-crew-tablet',
+      desktop: 'bg-crew-desktop',
     },
     '/technology': {
-      mobile: 'bgTechnologyMobile',
-      tablet: 'bgTechnologyTablet',
-      desktop: 'bgTechnologyDesktop',
+      mobile: 'bg-technology-mobile',
+      tablet: 'bg-technology-tablet',
+      desktop: 'bg-technology-desktop',
     },
 
   };
