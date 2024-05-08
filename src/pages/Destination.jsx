@@ -29,7 +29,7 @@ const Destination = () => {
   return (
     <section className="planet-container flex flex-col items-center justify-center mt-8 space-y-4 ">
       {/* Render the planet data based on the selected planet */}
-      <p className="font-barlow-condensed  tracking-[2.7px] uppercase mt-6">
+      <p className="title mt-6">
         <span className="opacity-20 font-bold mr-3 md:text-[20px] md:tracking-[3.38px] lg:text-[28px] lg:tracking-[4.72px]">
           01
         </span>

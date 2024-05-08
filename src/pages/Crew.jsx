@@ -28,7 +28,7 @@ const Crew = () => {
   return (
     <section className="crew flex flex-col items-center justify-center min-h-screen">
       <div className="md:mt-12">
-        <p className="navlink font-barlow-condensed  tracking-[2.7px] uppercase md:text-[20px] md:tracking-[3.38px] ">
+        <p className="title">
           <span className="opacity-20 font-bold mr-3"> 02 </span> meet your crew
         </p>
       </div>
