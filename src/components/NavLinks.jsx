@@ -11,7 +11,7 @@ const NavLinks = ({pathname}) => {
           <li className="mx-2 py-5" key={link.to}>
             <NavLink
               to={link.to}
-              activeclassname="border-opacity-100"
+              className={`md:hover:border-b-[3px] border-white py-10 duration-200 md:hover:border-opacity-50 ${pathname === link.to } ? 'border-opacity-100 ': 'border-opacity-0 hover:border-white/50'`}
             >
               <span>{link.linkNumber}</span> {link.name}
             </NavLink>
