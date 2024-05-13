@@ -13,15 +13,15 @@ const RootLayout = () => {
   useEffect(() => {
     const newBackgroundClass = getBackgroundClass(
       location.pathname,
-      window.innerWidth
+      window.innerWidth,
     );
     setBackgroundClass(newBackgroundClass);  //update backgroundClass state
-  }, [location.pathname]);  
+  }, [location.pathname, window.innerWidth]);
 
   return (
     <>
       {/* Header component */}
-      <Header />
+      <Header pathname={location.pathname}/>
       {/* Main content area with dynamic background class */}
       <main className={`m-h-screen ${backgroundClass}`}>
         {/* Outlet for rendering nested route components */}
